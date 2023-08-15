@@ -7,7 +7,6 @@
 hostname = neckgo.wedea.cn
 
 */
-var guding = JSON.parse($response.body);
+var qf = JSON.parse($response.body);
 guding.data.isVip = true;
-guding.data.nickName = "骨钉 https://t.me/Guding88";
-$done({ body: JSON.stringify(guding) });
+$done({ body: JSON.stringify(qf) });
