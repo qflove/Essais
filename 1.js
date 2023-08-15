@@ -4,6 +4,12 @@
 [MITM]
 hostname = neckgo.wedea.cn
 
+*/
+
+
+
 var wuwu = JSON.parse($response.body);
+
 wuwu.data.isVip = true;
+
 $done({ body: JSON.stringify(wuwu) });
