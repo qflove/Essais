@@ -1,11 +1,14 @@
+/*
+
+NeckGo：https://apps.apple.com/app/id1660505668
+
 [rewrite_local]
-^https?:\/\/neckgo\.wedea\.cn\/neok\/api\/api\/getLoginInfo url script-response-body https://github.com/qflove/Essais/blob/main/1.js
+^https?:\/\/neckgo\.wedea\.cn\/neok\/api\/api\/getLoginInfo url script-response-body https://raw.githubusercontent.com/qflove/Essais/main/1.js
 
 [MITM]
 hostname = neckgo.wedea.cn
 
 */
-  
-var body = JSON.parse($response.body);
-body.data.isVip = true;
-$done({ body: JSON.stringify(body) });
+var guding = JSON.parse($response.body);
+guding.data.isVip = true;
+$done({ body: JSON.stringify(guding) });
