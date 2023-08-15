@@ -8,5 +8,5 @@ hostname = neckgo.wedea.cn
 
 */
 var qf = JSON.parse($response.body);
-guding.data.isVip = true;
+qf.data.isVip = true;
 $done({ body: JSON.stringify(qf) });
